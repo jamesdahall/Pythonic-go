@@ -1,0 +1,21 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/check_names
+/heartbeat
+/tools/check_names/check_names
+/examples/heartbeat/heartbeat
+
+# Test / coverage
+*.test
+*.out
+coverage.html
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

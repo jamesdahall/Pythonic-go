@@ -1,0 +1,18 @@
+# Pythonic Go: snake_case is the point. Turn off mixedCaps nags.
+# Keep gofmt, govet, and errcheck — those are still correct.
+
+run:
+  timeout: 2m
+
+linters:
+  disable:
+    - stylecheck
+
+issues:
+  exclude-rules:
+    - text: "ST1003:"
+      linters: [staticcheck]
+    - text: "var-naming:"
+      linters: [revive]
+    - text: "exported .* should have comment or be unexported"
+      linters: [revive, golint]
